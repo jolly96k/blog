@@ -34,7 +34,7 @@ Dockerの実行環境がインストールされていること、DockerやDocke
 ### クローンするときの注意
 Hugoのプロジェクトをサブモジュールで追加しているため、クローンするときは"--recurse-submodules"オプションを付ける必要あり。
 
-    git clone -b https://github.com/jolly96k/blog.git --recurse-submodules
+    $ git clone https://github.com/jolly96k/blog.git --recurse-submodules  --remote-submodules
 
 ## ■チュートリアル
 ### 1. Hugoの開発環境をビルド
