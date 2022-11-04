@@ -29,10 +29,10 @@ Hugo、Dockerについては公式情報を参照。
 ### 前提条件
 Dockerの実行環境がインストールされていること、DockerやDocker Composeの基本的な使い方を習得していることを前提としている。
 
-### クローンするときの注意
-Hugoのプロジェクトをサブモジュールで追加しているため、クローンするときは"--recurse-submodules"オプションを付ける必要あり。
+### Hugoプロジェクトをクローンするときの注意
+Hugoのプロジェクトはテーマをサブモジュールで追加しているため、クローンするときは"--recurse-submodules"オプションを付ける必要あり。
 
-    $ git clone https://github.com/jolly96k/blog.git --recurse-submodules --remote-submodules
+    $ git clone https://github.com/jolly96k/hugo-blog.git volume/hugo/data/hugo-blog --recurse-submodules --remote-submodules
 
 ## ■チュートリアル
 ### 1. Hugoの開発環境をビルド
