@@ -5,7 +5,7 @@ PARENT_DIRNAME=$(cd $(dirname ${0}); cd ../; pwd)
 cd ${PARENT_DIRNAME}
 
 export HUGO_PROJECT_NAME="hugo-blog"
-export HOST_PORT="61313"
+export HOST_PORT="1313"
 
 docker run --rm -it \
            -p ${HOST_PORT}:1313 \
