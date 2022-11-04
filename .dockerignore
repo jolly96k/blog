@@ -2,4 +2,5 @@ image
 script
 volume
 .gitmodules
+*.yml
 README.md
