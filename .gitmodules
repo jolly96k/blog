@@ -1,0 +1,3 @@
+[submodule "volume/hugo/data"]
+	path = volume/hugo/data
+	url = https://github.com/jolly96k/hugo-blog.git
