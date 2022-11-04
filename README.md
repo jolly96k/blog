@@ -10,6 +10,8 @@ Hugo、Dockerについては公式情報を参照。
 ## ■ディレクトリ構造
     blog
     ├── dockerfile   ★Hugoの開発環境を構築するdockerfile
+    ├── image
+    │   └── hugo-blog.png
     ├── README.md
     ├── script   ★開発作業時に使うスクリプト
     │   ├── build_static_pages.sh
@@ -17,16 +19,13 @@ Hugo、Dockerについては公式情報を参照。
     │   └── run_hugo_server.sh
     └── volume
         └── hugo
-            └── data   ★コンテナにマウントするHugoのプロジェクト
-                ├── archetypes
-                │   └── default.md
-                ├── config.toml
-                ├── content
-                │   └── posts
-                │       └── playground.md
-                ├── README.md
-                └── themes
-                    └── ananke
+            └── data
+                └── hugo-blog   ★コンテナにマウントするHugoのプロジェクト
+                    ├── archetypes
+                    ├── config.toml
+                    ├── content
+                    ├── README.md
+                    └── themes
 
 ## ■利用時の注意
 ### 前提条件
