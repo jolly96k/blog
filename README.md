@@ -47,6 +47,26 @@ Dockerのコンテナイメージがビルドできていれば成功。
 イメージの名前は任意で良いが、後述するスクリプトは"hugo"を前提としている...🙇‍♂️🙇‍♂️🙇‍♂️
 
 ### 2. Hugoの開発用サーバーを起動
+    # Hugoプロジェクトをクローン
+    $ git clone https://github.com/jolly96k/hugo-blog.git volume/hugo/data/hugo-blog --recurse-submodules --remote-submodules
+    Cloning into 'volume/hugo/data/hugo-blog'...
+    remote: Enumerating objects: 27, done.
+    remote: Counting objects: 100% (27/27), done.
+    remote: Compressing objects: 100% (19/19), done.
+    remote: Total 27 (delta 7), reused 15 (delta 2), pack-reused 0
+    Receiving objects: 100% (27/27), 5.36 KiB | 2.68 MiB/s, done.
+    Resolving deltas: 100% (7/7), done.
+    Submodule 'themes/ananke' (https://github.com/theNewDynamic/gohugo-theme-ananke.git) registered for path 'themes/ananke'
+    Cloning into '/home/jolly/jolly_work/storage/HDD_2TB/workspace/blog/volume/hugo/data/hugo-blog/themes/ananke'...
+    remote: Enumerating objects: 2569, done.
+    remote: Counting objects: 100% (592/592), done.
+    remote: Compressing objects: 100% (340/340), done.
+    remote: Total 2569 (delta 304), reused 436 (delta 218), pack-reused 1977
+    Receiving objects: 100% (2569/2569), 4.46 MiB | 13.89 MiB/s, done.
+    Resolving deltas: 100% (1401/1401), done.
+    Submodule path 'themes/ananke': checked out 'b393088d09300408281929f30427cdbfdad02009'
+
+    # 開発用サーバー起動スクリプトを実行
     $ bash script/run_hugo_server.sh
     Start building sites …
     hugo v0.105.0-0e3b42b4a9bdeb4d866210819fc6ddcf51582ffa linux/amd64 BuildDate=2022-10-28T12:29:05Z VendorInfo=gohugoio
