@@ -1,4 +1,0 @@
-[submodule "volume/hugo/data/hugo-blog"]
-	path = volume/hugo/data/hugo-blog
-	url = https://github.com/jolly96k/hugo-blog.git
-	branch = main
