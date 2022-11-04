@@ -9,6 +9,7 @@ Hugo、Dockerについては公式情報を参照。
 
 ## ■ディレクトリ構造
     blog
+    ├── compose.yml   ★NetlifyへリダイレクトさせるNginxコンテナを起動するcomposeファイル
     ├── dockerfile   ★Hugoの開発環境を構築するdockerfile
     ├── image
     │   └── hugo-blog.png
@@ -18,14 +19,11 @@ Hugo、Dockerについては公式情報を参照。
     │   ├── run_hugo_dev.sh
     │   └── run_hugo_server.sh
     └── volume
-        └── hugo
+        ├── hugo
+        │   └── data
+        └── nginx
             └── data
-                └── hugo-blog   ★コンテナにマウントするHugoのプロジェクト
-                    ├── archetypes
-                    ├── config.toml
-                    ├── content
-                    ├── README.md
-                    └── themes
+                └── redirect.conf   ★コンテナにマウントするNginxの設定ファイル
 
 ## ■利用時の注意
 ### 前提条件
