@@ -8,6 +8,7 @@ Hugoを触ってみたいけど、ホストの環境を汚すのは嫌だな…�
 Hugo、Dockerについては公式情報を参照。
 
 ## ■ディレクトリ構造
+    blog
     ├── dockerfile   ★Hugoの開発環境を構築するdockerfile
     ├── README.md
     ├── script   ★開発作業時に使うスクリプト
